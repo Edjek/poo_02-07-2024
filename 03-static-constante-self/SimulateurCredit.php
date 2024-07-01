@@ -2,6 +2,9 @@
 
 class SimulateurCredit
 {
+    /**
+     * @var float
+     */
     public const TAUX = 20.5;
 
     /**
