@@ -11,7 +11,7 @@ class SimulateurCredit
 
     /**
      * @param int $pret
-     * 
+     *
      * @return float
      */
     public static function calculInteret(int $pret): float
