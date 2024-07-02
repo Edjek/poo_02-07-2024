@@ -1,6 +1,6 @@
 <?php
 
-class Mathematic
+class Mathematique
 {
     /**
      * @param float $x
@@ -8,7 +8,7 @@ class Mathematic
      * 
      * @return float
      */
-    public static function add(float $x, float $y): float
+    public static function addition(float $x, float $y): float
     {
         return $x + $y;
     }
@@ -19,9 +19,9 @@ class Mathematic
      * 
      * @return float
      */
-    public static function substract(float $x, float $y): float
+    public static function soustraction(float $x, float $y): float
     {
-        return $x + $y;
+        return $x - $y;
     }
 
     /**
@@ -30,9 +30,9 @@ class Mathematic
      * 
      * @return float
      */
-    public static function multiply(float $x, float $y): float
+    public static function multiplication(float $x, float $y): float
     {
-        return $x + $y;
+        return $x * $y;
     }
 
     /**
@@ -41,18 +41,22 @@ class Mathematic
      * 
      * @return float
      */
-    public static function divide(float $x, float $y): float
+    public static function division(float $x, float $y): float | string
     {
-        return $x + $y;
-    }
+        if (self::isNotNull($y)) {
 
+            return $x / $y;
+        }
+
+        return 'vous ne pouvez pas diviser par 0';
+    }
 
     /**
      * @param float $x
      * 
      * @return bool
      */
-    public static function isNotNull(float $x): bool
+    private static function isNotNull(float $x): bool
     {
         return $x != 0;
     }
