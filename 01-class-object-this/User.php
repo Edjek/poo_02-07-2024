@@ -50,7 +50,7 @@ class User
 
     /**
      * @param int $age
-     * 
+     *
      * @return string
      */
     public function presentation(int $age = 0): string

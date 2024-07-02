@@ -2,6 +2,9 @@
 
 class SimulateurCredit
 {
+    /**
+     * @var float
+     */
     public const TAUX = 20.5;
 
     /**
@@ -11,7 +14,7 @@ class SimulateurCredit
 
     /**
      * @param int $pret
-     * 
+     *
      * @return float
      */
     public static function calculInteret(int $pret): float

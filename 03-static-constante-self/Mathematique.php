@@ -5,7 +5,7 @@ class Mathematique
     /**
      * @param float $x
      * @param float $y
-     * 
+     *
      * @return float
      */
     public static function addition(float $x, float $y): float
@@ -16,7 +16,7 @@ class Mathematique
     /**
      * @param float $x
      * @param float $y
-     * 
+     *
      * @return float
      */
     public static function soustraction(float $x, float $y): float
@@ -27,7 +27,7 @@ class Mathematique
     /**
      * @param float $x
      * @param float $y
-     * 
+     *
      * @return float
      */
     public static function multiplication(float $x, float $y): float
@@ -38,7 +38,7 @@ class Mathematique
     /**
      * @param float $x
      * @param float $y
-     * 
+     *
      * @return float
      */
     public static function division(float $x, float $y): float | string
@@ -53,7 +53,7 @@ class Mathematique
 
     /**
      * @param float $x
-     * 
+     *
      * @return bool
      */
     private static function isNotNull(float $x): bool

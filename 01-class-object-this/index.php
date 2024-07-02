@@ -15,9 +15,6 @@ $doe->lastName = 'Doe';
 $rachid->firstName = 'rachid';
 $rachid->lastName = 'edjekouane';
 
-echo $rachid->bonjour() . '<br>';
-echo $doe->bonjour() . '<br>';
-
 echo $doe->presentation(41) . '<br>';
 
 $dog = new Animal();
