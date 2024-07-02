@@ -2,6 +2,12 @@
 
 require_once './Article.php';
 
+// L'héritage permet de créer une classe enfant qui hérite des propriétés et méthodes de la classe parent.
+// L'héritage permet de créer une classe enfant qui pourra avoir ses propriétés et méthodes supplémentaires.
+// Il faut que les propriétés et méthodes du parent soient en public ou protected pour que l'enfant puisse y acceder.
+
+// Le polymorphisme permet de redéfinir une méthode dans la classe enfant.
+
 class Conserve extends Article
 {
     /**
