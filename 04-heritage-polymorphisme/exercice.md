@@ -31,5 +31,110 @@ Dans cet exercice, vous allez créer une classe `Article` en PHP, permettant de 
    - Utilisez la méthode `displayProduct` pour afficher les détails de l'article.
    - Modifiez le prix de l'article à 89.99 euros et affichez de nouveau les détails.
 
+# Classe Conserve héritant de la classe Article
+
+## Instructions
+
+Créer une classe `Conserve` qui hérite de la classe `Article`.
+
+### Propriétés
+
+- `TABLEAU listExcipient;`
+
+### Constructeur
+
+Créer un constructeur pour initialiser les propriétés de la classe.
+
+### Getter et Setter
+
+Ajouter des méthodes getter et setter pour accéder et modifier les propriétés de la classe.
+
+### Méthode displayProduct
+
+Créer une méthode `displayProduct` pour afficher les informations du produit sous le format suivant :
+
+- "Le produit est un: [nom du produit] et il coûte : [prix]."
+- "La date de péremption est le: [date de péremption]."
+- "La liste des excipients est : [liste des excipients]."
+
+Utiliser une méthode PHP pour transformer les éléments d'un tableau en une chaîne de caractères pour la liste des excipients.
+
+### Exemple de code
+
+```php
+<?php
+
+class Aliment
+{
+    protected $nom;
+    protected $prix;
+
+    public function __construct($nom, $prix)
+    {
+        $this->nom = $nom;
+        $this->prix = $prix;
+    }
+
+    public function getNom()
+    {
+        return $this->nom;
+    }
+
+    public function setNom($nom)
+    {
+        $this->nom = $nom;
+    }
+
+    public function getPrix()
+    {
+        return $this->prix;
+    }
+
+    public function setPrix($prix)
+    {
+        $this->prix = $prix;
+    }
+
+    public function displayProduct()
+    {
+        echo "Le produit est un: {$this->nom} et il coûte : {$this->prix}.\n";
+    }
+
+}
+
+class Conserve extends Aliment
+{
+    private $listExcipient;
+
+    public function __construct($nom, $prix $listExcipient)
+    {
+        parent::__construct($nom, $prix);
+        $this->listExcipient = $listExcipient;
+    }
+
+    public function getListExcipient()
+    {
+        return $this->listExcipient;
+    }
+
+    public function setListExcipient($listExcipient)
+    {
+        $this->listExcipient = $listExcipient;
+    }
+
+    public function displayProduct()
+    {
+        $excipients = implode(", ", $this->listExcipient);
+        echo "Le produit est un: {$this->nom} et il coûte : {$this->prix}.\n";
+        echo "La liste des excipients est : {$excipients}.\n";
+    }
+}
+
+// Exemple d'utilisation
+$conserve = new Conserve("cookie", 2.99, ["sucre", "farine", "beurre"]);
+$conserve->displayProduct();
+?>
+
+```
 
 Avec ces exercices, vous vous familiariserez avec la création et la manipulation de classes en PHP, ainsi qu'avec l'utilisation de getters, setters et méthodes pour afficher des informations.

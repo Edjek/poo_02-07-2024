@@ -10,7 +10,7 @@ class Article
     /**
      * @var float
      */
-    private float $price;
+    protected float $price;
 
     public function __construct(string $name, float $price)
     {

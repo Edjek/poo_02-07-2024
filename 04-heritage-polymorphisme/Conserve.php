@@ -15,8 +15,11 @@ class Conserve extends Article
      */
     private array $listExcipient;
 
-    // constructor
-
+    public function __construct(string $name, float $price, array $list)
+    {
+        parent::__construct($name, $price);
+        $this->listExcipient = $list;
+    }
 
     /**
      *
@@ -53,6 +56,6 @@ class Conserve extends Article
      */
     public function displayProduct(): string
     {
-        return parent::displayProduct() . " et la liste des excipient est : ";
+        return parent::displayProduct() . " et la liste des excipient est : " . implode('', $this->listExcipient);
     }
 }
