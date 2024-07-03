@@ -280,10 +280,18 @@ unset($naruto);
 // Une interface est un contrat qui permet de définir des méthodes que les classes qui implémentent cette interface doivent implémenter.
 
 /*------------------------------------*\
+    # FINAL
+\*------------------------------------*/
+
+// Une classe finale est une classe qui ne peut pas être étendue.
+// Une méthode finale est une méthode qui ne peut pas être redéfinie dans une classe enfant.
+
+/*------------------------------------*\
     # COMPOSITION
 \*------------------------------------*/
 
-// La composition permet de créer une classe qui contient des objets d'autres classes.
+// La composition permet de créer une classe qui contient une autre classe.
+// La classe conteneur est responsable de la création et de la gestion de la classe contenue.
 
 class Engine
 {
@@ -324,7 +332,9 @@ $car->start();
     # AGGRÉGATION
 \*------------------------------------*/
 
-// L'aggrégation permet de créer une classe qui contient des objets d'autres classes.
+// L'aggrégation permet de créer une classe qui contient une autre classe.
+// Elle sera passée en paramètre du constructeur ou d'une méthode.
+
 class Livre
 {
     /**
@@ -455,13 +465,6 @@ class UserRepository
 $database = new Database();
 $userRepository = new UserRepository($database);
 $user = $userRepository->getUserById(1);
-
-/*------------------------------------*\
-    # FINAL
-\*------------------------------------*/
-
-// Une classe finale est une classe qui ne peut pas être étendue.
-// Une méthode finale est une méthode qui ne peut pas être redéfinie dans une classe enfant.
 
 /*------------------------------------*\
     # NAMESPACE
