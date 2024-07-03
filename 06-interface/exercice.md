@@ -38,9 +38,14 @@ Méthodes à inclure :
 
 ### 3. Classe Wolf
 
-Créez une classe `Wolf` avec la propriété suivante :
+Créez une classe `Wolf` qui hérite de `Animal` avec la propriété suivante :
 
 - `solitaire` (bool)
+
+Méthodes à inclure :
+
+- Constructeur pour initialiser les propriétés, y compris celle héritée.
+- Getter et Setter pour la propriété `solitaire`.
 
 ### 4. Interface SavageAnimal
 
