@@ -140,7 +140,7 @@ class Manga
      */
     private string $author;
 
-    public function __construct($titre, $auteur)
+    public function __construct(string $titre,string $auteur)
     {
         $this->title = $titre;
         $this->author = $auteur;
@@ -251,7 +251,7 @@ unset($naruto);
 \*------------------------------------*/
 
 // Une constante est une valeur qui ne peut pas être modifiée.
-// Une constante est statique.
+// Une constante est static.
 
 /*------------------------------------*\
     # HÉRITAGE
@@ -265,3 +265,4 @@ unset($naruto);
 \*------------------------------------*/
 
 // Le polymorphisme permet de redéfinir une méthode dans une classe enfant.
+
