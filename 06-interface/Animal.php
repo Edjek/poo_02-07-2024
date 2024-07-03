@@ -33,7 +33,7 @@ abstract class Animal
     /**
      * Get the value of nom
      */
-    public function getNom():string
+    public function getNom(): string
     {
         return $this->nom;
     }
@@ -43,7 +43,7 @@ abstract class Animal
      *
      * @return  self
      */
-    public function setNom($nom):self
+    public function setNom($nom): self
     {
         $this->nom = $nom;
 
@@ -53,7 +53,7 @@ abstract class Animal
     /**
      * Get the value of age
      */
-    public function getAge():int
+    public function getAge(): int
     {
         return $this->age;
     }
