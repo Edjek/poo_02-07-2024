@@ -57,3 +57,6 @@ Obliger les classes `Peugeot` et `Renault` à implémenter cette interface :
 -   `Renault` doit avoir une méthode `start` qui retourne la chaîne "XXX a demarré la Peugeot".
 
 Enfin, créer une instance de `User` et démarrer les véhicules `Peugeot` et `Renault` en utilisant la méthode `start` de l'interface `Engine`.
+
+
+Un voiture peut avoir un accident et si elle a un accident le user est blessé.
